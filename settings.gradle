@@ -1,0 +1,3 @@
+
+include ':qoslib', ':mmc_test_aar'
+project(':mmc_test_aar').projectDir = new File('examples/mmc_test_aar')

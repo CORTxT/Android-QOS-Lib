@@ -1,0 +1,22 @@
+This is the translation directory for B2B site.
+
+Translation required vanilla english HTML files with FINAL english texts.
+
+All the original english HTML files need to be put in the original subdirectory (override/delete current ones)
+
+Directory structure and meaning:
+
+i18n -- root
+    /originals -- english finished html pages with final texts
+    /languages -- directory containing translation texts, subdirectories indicate languages,
+                  populated by striptext.py script
+                  The CSV files are also present here at the languages folder
+    /templates -- directory with "templated" text-less html files created by striptext.py script
+
+To add additional languages for translation simply add subdirectories to languages folder, for example languages/de for german etc.
+
+To create the english text for translation, run striptext.py (as "python striptext.py") in the root directory. The languages/en subdirectory will get filled with translatable files and a convinient en.csv file will appear in the language/en subdirectory for translation.
+
+After the CSV files are translated, copy them to the languages subdirectory (languages/de.csv etc.) and run translate.py (as "python translate.py"). This will create the ouput folder containing final HTML pages with translated texts in all provided languages.
+
+NOTE: the striptext.py script doesn't delete old translation files inside the languages directory (it will override tho). If you need a fresh start, delete the files there, otherwise your en.csv might contain non-needed data.

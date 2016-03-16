@@ -30,3 +30,20 @@ proguard/
 
 # Android Studio captures folder
 captures/
+
+*~		#no temporary files created by text editors
+gen/
+bin/
+*.dex
+*.ap[k_]
+*.classpath
+*.settings/
+Todos.lst
+.DS_Store
+.metadata/
+
+.idea/workspace.xml
+.idea/libraries
+.idea/libraries/*.xml
+
+!mmcsys.apk
