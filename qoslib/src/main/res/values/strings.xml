@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <resources>
     <string name="alt_app_label"></string>
-    <string name="app_name">com.cortxt.app.MMC.MMCApplication</string>
     <string name="MMC_URL_WIN">http://mymobilecoverage.com/</string>
     <string name="MMC_URL_CLOUD">http://d1l72qawknwf5q.cloudfront.net</string>
     <string name="progress_step1of3">Step 1 of 3</string>

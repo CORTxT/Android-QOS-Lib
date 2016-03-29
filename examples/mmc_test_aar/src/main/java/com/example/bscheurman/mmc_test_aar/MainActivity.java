@@ -8,7 +8,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.cortxt.app.MMC.Utils.MMCCommand;
+import com.cortxt.app.mmccore.MMCService;
+import com.cortxt.app.mmccore.Utils.MMCCommand;
 
 
 public class MainActivity extends Activity {
@@ -20,6 +21,7 @@ public class MainActivity extends Activity {
 
         MMCCommand.setLogin(this, "library_test@mmc.com");
         MMCCommand.start(this);
+        MMCService.setLogin(this, "library_test@mmc.com");
     }
 
     @Override
